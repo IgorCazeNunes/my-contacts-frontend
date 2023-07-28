@@ -16,11 +16,14 @@
     "react"
   ],
   "rules": {
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
     "react/react-in-jsx-scope": "off",
+    "react/no-deprecated": "off",
     "react/jsx-filename-extension": [
-      1,
+      "warn",
       {
-        "extesions": [
+        "extensions": [
           ".js",
           ".jsx"
         ]
