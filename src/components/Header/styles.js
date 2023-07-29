@@ -23,13 +23,18 @@ input {
 
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
 
-  background: #FFF;
-  border: none;
+  background: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.white};
   border-radius: 25px;
   outline: 0;
 
   &::placeholder {
     color: #BCBCBC;
+  }
+
+  &:focus {
+    border: 1px solid ${({ theme }) => theme.colors.primary.main};
+    transition: border 0.2s ease-in;
   }
 }
 `;
