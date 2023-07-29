@@ -6,6 +6,7 @@ import defaultTheme from '../../assets/styles/themes/default';
 import Header from '../Header';
 
 import * as S from './styles';
+import ContactsList from '../ContactsList';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
 
       <S.Container>
         <Header />
+
+        <ContactsList />
       </S.Container>
     </ThemeProvider>
   );
