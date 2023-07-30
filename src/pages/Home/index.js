@@ -7,6 +7,8 @@ import * as S from './styles';
 export default function Home() {
   return (
     <S.Container>
+      <S.InputSearch type="text" placeholder="Pesquise pelo nome..." />
+
       <S.Header>
         <strong>3 Contatos</strong>
 

@@ -10,6 +10,29 @@ export const Container = styled.div`
   }
 `;
 
+export const InputSearch = styled.input`
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    margin-bottom: 32px;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+
+    background: ${({ theme }) => theme.colors.white};
+    border: 1px solid ${({ theme }) => theme.colors.white};
+    border-radius: 25px;
+    outline: 0;
+
+    &::placeholder {
+      color: ${({ theme }) => theme.colors.gray[200]};
+    }
+
+    &:focus {
+      border: 1px solid ${({ theme }) => theme.colors.primary.main};
+      transition: border 0.2s ease-in;
+    }
+`;
+
 export const Header = styled.header`
   display: flex;
   align-items: center;
