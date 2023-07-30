@@ -6,10 +6,6 @@ function Header() {
   return (
     <S.Container>
       <img src={logo} alt="MyContacts" />
-
-      <S.InputSearchContainer>
-        <input type="text" placeholder="Pesquise pelo nome..." />
-      </S.InputSearchContainer>
     </S.Container>
   );
 }
