@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+
 import PageHeader from '../../components/PageHeader';
+import ContactForm from '../../components/ContactForm';
 
 export default function EditContact() {
   const { id } = useParams();
@@ -8,7 +10,7 @@ export default function EditContact() {
     <>
       <PageHeader title={`Editar Contato ${id}`} />
 
-      <h1>EditContact</h1>
+      <ContactForm buttonLabel="Salvar Alterações" />
     </>
   );
 }
