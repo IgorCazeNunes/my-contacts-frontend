@@ -16,7 +16,7 @@ export const InputSearch = styled.input`
     padding: 0 16px;
     margin-bottom: 32px;
 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+    box-shadow: ${({ theme }) => theme.colors.boxShadow};
 
     background: ${({ theme }) => theme.colors.white};
     border: 1px solid ${({ theme }) => theme.colors.white};
@@ -97,7 +97,7 @@ export const Card = styled.div`
 
   background: ${({ theme }) => theme.colors.white};
   border-radius: 4px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: ${({ theme }) => theme.colors.boxShadow};
 `;
 
 export const CardInfo = styled.div`

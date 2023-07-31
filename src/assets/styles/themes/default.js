@@ -1,6 +1,7 @@
 export default {
   colors: {
     white: '#FFFFFF',
+    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.04)',
     background: '#F6F5FC',
     primary: {
       dark: '#3346F0',
