@@ -4,7 +4,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  `;
+`;
 
 export const InputContainer = styled.div`
   display: flex;

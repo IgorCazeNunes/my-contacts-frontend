@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export default styled.button`
   padding: 4px 16px;
 
-  width: 100%;
   height: 52px;
 
   border: none;
@@ -25,6 +24,7 @@ export default styled.button`
   &:active {
     background: ${({ theme }) => theme.colors.primary.dark};
   }
+
   &:disabled {
     background: #ccc;
     cursor: default;
