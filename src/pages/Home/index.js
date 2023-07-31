@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+
 import arrow from '../../assets/images/icons/arrow.svg';
 import edit from '../../assets/images/icons/edit.svg';
 import trash from '../../assets/images/icons/trash.svg';
@@ -12,7 +14,7 @@ export default function Home() {
       <S.Header>
         <strong>3 Contatos</strong>
 
-        <a href="/">Novo Contato</a>
+        <Link to="/new">Novo Contato</Link>
       </S.Header>
 
       <hr />
@@ -41,9 +43,9 @@ export default function Home() {
                   </S.CardInfo>
 
                   <S.CardActions>
-                    <a href="/">
+                    <Link to={`/edit/${number}`}>
                       <img src={edit} alt="Edit" />
-                    </a>
+                    </Link>
 
                     <button type="button">
                       <img src={trash} alt="Delete" />
